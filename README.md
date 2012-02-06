@@ -1,7 +1,7 @@
 yet another lua-mode that corrects indentation of function()
 ====
 
-I know you know default emacs' lua-mode is corrupted...
+I know you know default emacs' lua-mode is corrupt...
 
 
 
@@ -20,4 +20,4 @@ Related discussions
 See
 [how to configure indentation in emacs lua-mode : stack overflow](http://stackoverflow.com/questions/4643206/how-to-configure-indentation-in-emacs-lua-mode)
 
-but in this repository it fixes the bug in above code.
+In this repository it fixes the bug in above code.

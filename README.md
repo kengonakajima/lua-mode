@@ -1,19 +1,31 @@
-yet another lua-mode that corrects indentation of function()
+Yet another lua-mode that is suitable for luvit or any callback-based programming
 ====
+Default emacs' lua-mode indents like this:
 
-I know you know default emacs' lua-mode is corrupt...
+<pre>
+local foo = function()
+               print("Hello, world")
+            end
+</pre>
+It takes too many indents, apparently corrupt..
 
+Here you will get:
+<pre>
+local foo = function()
+  print("Hello, world!")
+end
+</pre>
 
+Nice, isnt it.
 
-Put this my-lua.el to anywhere and append dot_emacs_to_append.
-
-Essentialy:
-
+Put my-lua.el anywhere and append this:
 <pre>
 (add-hook 'lua-mode-hook 
           (lambda () (unless (fboundp 'lua-calculate-indentation-right-shift-next)
                        (load-file (locate-file "my-lua.el" load-path)))))
 </pre>
+in your .emacs .
+
 
 Related discussions
 ====
